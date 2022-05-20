@@ -33,7 +33,7 @@ const Search = ({ search, data, handleChange, DeleteUsers,AddUsers }) => (
           return (
             <div
               key={item.Id} 
-              style={{border: "1px solid black"}}
+              style={{border: "1px solid #ccc", padding: "10px", margin: "10px"}}
             >
               {" "}
               {item.Name}{"\n"}
