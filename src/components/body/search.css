@@ -1,0 +1,23 @@
+.delete-user{
+    width: 1rem;
+    height:1rem;
+}
+.list-delete-button{
+    margin-left: 1rem;
+}
+.search{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: #ccc solid 1px;
+}
+.search-input{
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+}
+.search-add-button{
+    width: 5rem;
+    height: 2.3rem;
+    background-color: darkblue;
+    color: white;
+}

@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+}
+.header-logo{
+  margin-right: 1rem;
+}
+.header-logo-png{
+    height: 6rem;
+    width: 6rem;
+}
+.header-text{
+    margin-top: -1.2rem;
+}
+h2{
+  font-size: 1.8rem;
+}
+h4{
+  font-size: 1rem;
+}

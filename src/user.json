@@ -1,0 +1,61 @@
+{
+	"Users": [
+		{
+			"Id": 1,
+			"Name": "Chilman Mehrotra",
+			"Designation": "Client Manager",
+			"email": "chilman@spottabl.com"
+		},
+		{
+			"Id": 2,
+			"Name": "Saboor Sirwal",
+			"Designation": "Software Engineer",
+			"email": "saboor@spottabl.com"
+		},
+		{
+			"Id": 3,
+			"Name": "Smirti Wadhwa",
+			"Designation": "Talent Acquisition Specialist",
+			"email": "smirti@spottabl.com"
+		},
+		{
+			"Id": 4,
+			"Name": "Vanishri",
+			"Designation": "Client Manager",
+			"email": "vani@spottabl.com"
+		},
+		{
+			"Id": 5,
+			"Name": "Vishal N",
+			"Designation": "Senior Manager - Recruitment Success",
+			"email": "vishal@spottabl.com"
+		},
+		{
+			"Id": 6,
+			"Name": "VIdya Nagesh",
+			"Designation": "Recruitment Success",
+			"email": "vIdya@spottabl.com"
+		},
+		{
+			"Id": 7,
+			"Name": "Priyanka Singh",
+			"Designation": "Senior Recruiter",
+			"email": "priyanka@spottabl.com"
+		},
+		{
+			"Id": 8,
+			"Name": "Ajith Kp",
+			"Designation": "Associate Principal-Leadership Hiring",
+			"email": "ajith@spottabl.com"
+			
+		},
+		{
+			"Id": 9,
+			"Name": "Arbaaz KP",
+			"Designation": "Talent Acquisition Specialist",
+			"email": "arbaz@spottabl.com"
+			
+		}
+		
+	]
+}
