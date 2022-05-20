@@ -2,9 +2,31 @@ import React from 'react';
 import deleteicon from '../images/delete.svg';
 import "./search.css";
 import Select from "react-select";
-const Search = ({ search, data, handleChange, DeleteUsers,AddUsers }) => (
+import options from "../../user.json";
+
+
+export default function Search ({ search, data, handleChange, DeleteUsers,AddUsers }){
+  
+
+
+
+
+
+  return(
   <div className="search">
   <h2>Customer Success Managers</h2>
+  <form name="add_users" onSubmit={AddUsers}>
+  <Select 
+        name="accounts"
+        options={options.Users}
+        type="text"
+        
+        getOptionLabel={(option) => option.Name}
+        getOptionValue={(option) => option.Id}
+        isMulti="true"
+        
+  />
+    </form>
     <form name="add_users" onSubmit={AddUsers}>
     <input
       type="text"
@@ -15,17 +37,7 @@ const Search = ({ search, data, handleChange, DeleteUsers,AddUsers }) => (
       className="search-input"
     />
     <button className="search-add-button">Add CSM</button>
-    <Select myFontSize="20px" options ={data &&
-      data.map((item, index) => {
-          return (
-            <div
-              key={item.Id}
-            >
-              {" "}
-              {item.Name}{" "}
-            </div>
-          );
-        })}/>
+    
     </form>
     <div className="search-result">
       {data &&
@@ -48,8 +60,9 @@ const Search = ({ search, data, handleChange, DeleteUsers,AddUsers }) => (
           );
         })}
         </div>
+        
    
   </div>
+  
 );
-
-export default Search;
+}
