@@ -33,11 +33,11 @@ export default function App() {
     e.preventDefault();
     const lastId = data.length - 1;
     const { Name } = e.target.elements;
-    const newInstrument = {
+    const newUsers = {
       Id: lastId + 1,
       Name: Name.value,
     };
-    setData([...data, newInstrument]);
+    setData([...data, newUsers]);
   };
 
   /* delete user  */

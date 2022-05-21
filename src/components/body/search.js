@@ -4,7 +4,24 @@ import "./search.css";
 import Select from "react-select";
 import options from "../../user.json";
 
+const customStyles = {
+  option: (provided, state) => ({
+    ...provided,
+    borderBottom: '1px dotted pink',
+    color: state.isSelected ? 'red' : 'blue',
+    padding: 20,
+  }),
+  control: () => ({
+    // none of react-select's styles are passed to <Control />
+    width: '100%',display: 'flex',
+  }),
+  singleValue: (provided, state) => {
+    const opacity = state.isDisabled ? 0.5 : 1;
+    const transition = 'opacity 300ms';
 
+    return { ...provided, opacity, transition };
+  }
+}
 export default function Search ({ search, data, handleChange, DeleteUsers,AddUsers }){
   
 
@@ -20,8 +37,8 @@ export default function Search ({ search, data, handleChange, DeleteUsers,AddUse
         name="accounts"
         options={options.Users}
         type="text"
-        
-        getOptionLabel={(option) => option.Name}
+        styles={customStyles}
+        getOptionLabel={(option) =>  option.Name + ' ' + option.Designation + " - " + option.email}
         getOptionValue={(option) => option.Id}
         isMulti="true"
         
